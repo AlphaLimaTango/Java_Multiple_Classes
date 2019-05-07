@@ -15,8 +15,9 @@ public class Library {
         this.books.add(book);
     }
 
-    public void removeBook(Book book) {
-        this.books.remove(this.books.size() - 1);
+    public Book removeBook(Book book) {
+        Book removedBook = this.books.remove(this.books.size() - 1);
+        return removedBook;
     }
 
     public int countBooks() {

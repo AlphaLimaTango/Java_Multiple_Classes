@@ -13,6 +13,5 @@ public class Borrower {
     }
 
     public void borrowBook(Library library) {
-        this.collection.add();
     }
 }
