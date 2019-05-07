@@ -15,7 +15,8 @@ public class Library {
         this.books.add(book);
     }
 
-    public Book removeBook(Book book) {
+    public Book removeBook() {
+        if (this.getCapacity() == 0) return null;
         Book removedBook = this.books.remove(this.books.size() - 1);
         return removedBook;
     }

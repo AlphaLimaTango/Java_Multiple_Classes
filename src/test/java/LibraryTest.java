@@ -37,7 +37,7 @@ public class LibraryTest {
 
     @Test
     public void canRemoveBook(){
-        library.removeBook(book);
+        library.removeBook();
         assertEquals(0, library.getCapacity());
     }
 }
